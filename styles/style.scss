@@ -80,15 +80,20 @@ table {
             width: 50%;
             border-radius: 2px;
             border: 1px solid $lightColor;
+            padding:5px;
+            &:active,&:focus, &:focus-visible {
+                border: 1px solid $mainColor;
+            }
         }
     }
 }
 .buttons {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 .button {
-    margin:30px auto 0;
+    margin:0px auto 15px;
     padding: 10px 15px;
     border: 1px solid $mainColor;
     color: $mainColor;

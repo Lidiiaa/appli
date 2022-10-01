@@ -78,15 +78,20 @@ table tbody tr.totals {
   width: 50%;
   border-radius: 2px;
   border: 1px solid #bddbef;
+  padding: 5px;
+}
+.inputs .field input:active, .inputs .field input:focus, .inputs .field input:focus-visible {
+  border: 1px solid #21618C;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .button {
-  margin: 30px auto 0;
+  margin: 0px auto 15px;
   padding: 10px 15px;
   border: 1px solid #21618C;
   color: #21618C;
