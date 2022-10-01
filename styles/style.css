@@ -1,0 +1,102 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.tables {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+table {
+  font-size: 1.2rem;
+  background-color: #bddbef;
+  padding: 10px;
+  margin: auto;
+  border-radius: 2px;
+  border-spacing: 2px;
+}
+table thead {
+  text-transform: uppercase;
+  background-color: #21618C;
+  border-bottom: 1px solid white;
+}
+table thead tr {
+  color: white;
+}
+table thead th {
+  padding: 10px;
+}
+table td:nth-child(2), table th:first-child {
+  border-right: 1px solid white;
+}
+table td {
+  width: 200px;
+  padding: 10px;
+}
+table tbody tr:nth-child(even) {
+  background-color: #93c5e6;
+}
+table tbody tr.totals {
+  border-top: 1px solid white;
+  background-color: #21618C;
+  color: white;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid white;
+  border-color: #bddbef;
+}
+.inputs .field {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2px;
+}
+.inputs .field:first-child {
+  margin-bottom: 10px;
+}
+.inputs .field label {
+  width: 45%;
+}
+.inputs .field input {
+  width: 50%;
+  border-radius: 2px;
+  border: 1px solid #bddbef;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin: 30px auto 0;
+  padding: 10px 15px;
+  border: 1px solid #21618C;
+  color: #21618C;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  border-radius: 2px;
+}
+.button:hover {
+  background-color: #bddbef;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

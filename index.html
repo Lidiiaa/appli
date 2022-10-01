@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <h1>Dette calculator</h1>
+
+    <div class="tables">
+        <div class="container">
+            <table class="tableDette">
+                <thead>
+                  <tr>
+                    <th colspan="2">Dette</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr class="totals">
+                    <td>Reste à payer</td>
+                    <td id="rest"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="inputsDette inputs">
+                <div class="field">
+                    <label for="summDette">Combien ?</label>
+                    <input type="number" id="summDette" name="summDette">
+                </div>
+                <div class="field">
+                    <label for="commentDette">Pourquoi ?</label>
+                    <input type="text" id="commentDette" name="commentDette">
+                </div>
+            </div>
+            <div class="buttons">
+                <a class="button" id="addDette">Ajouter une dette</a>
+                <a class="button" id="remouveDette">Enlever une dette</a>
+            </div>
+        </div>
+    
+        <div class="container">
+            <table class="tablePaid">
+                <thead>
+                  <tr>
+                    <th colspan="2">Payé</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr class="totals">
+                    <td>Total</td>
+                    <td id="paid"></td>
+                  </tr>
+                </tbody>
+            </table>
+            <div class="inputsDette inputs">
+                <div class="field">
+                    <label for="summPay">Combien ?</label>
+                    <input type="number" id="summPay" name="summPay">
+                </div>
+                <div class="field">
+                    <label for="commentPay">Comment</label>
+                    <input type="text" id="commentPay" name="commentPay">
+                </div>
+            </div>
+            <div class="buttons">
+                <a class="button" id="addPay">Ajouter le paiment</a>
+                <a class="button" id="remouvePay">Enlever le paiment</a>
+            </div>
+        </div>
+    </div>
+
+        
+    
+    <script src="scripts/script.js"></script>
+</body>
+</html>

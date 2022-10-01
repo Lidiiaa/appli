@@ -1,0 +1,19 @@
+{
+  "name": "appli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/style.scss:./styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lidiiaa/appli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lidiiaa/appli/issues"
+  },
+  "homepage": "https://github.com/Lidiiaa/appli#readme"
+}

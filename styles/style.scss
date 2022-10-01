@@ -1,0 +1,102 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+}
+$mainColor:#21618C;
+$lightColor:lighten($mainColor,50%);
+$border:1px solid white;
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+.tables {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+table {
+    font-size: 1.2rem;
+    background-color: $lightColor;
+    padding: 10px;
+    margin:auto;
+    border-radius: 2px;
+    border-spacing: 2px;
+    thead {
+        text-transform: uppercase;
+        background-color:$mainColor;
+        border-bottom: $border;
+        tr {
+            color: white;
+        }
+        th {
+            padding: 10px;
+        }
+    }
+    td:nth-child(2), th:first-child {
+        border-right: $border;
+    } 
+
+    td {
+        width: 200px;
+        padding: 10px;
+    }
+    
+    
+    tbody {
+        tr:nth-child(even) {
+            background-color: darken($lightColor,10%);
+        }
+        tr.totals {
+            border-top: $border;
+            background-color: $mainColor;
+            color: white;
+        }
+    }
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 20px;
+    border: $border;
+    border-color: $lightColor;
+    .field {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 2px;
+        &:first-child {
+            margin-bottom: 10px;
+        }
+        label {
+            width: 45%;
+        }
+        input {
+            width: 50%;
+            border-radius: 2px;
+            border: 1px solid $lightColor;
+        }
+    }
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    margin:30px auto 0;
+    padding: 10px 15px;
+    border: 1px solid $mainColor;
+    color: $mainColor;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+    &:hover {
+        background-color: $lightColor;
+        cursor: pointer;
+    }
+}
